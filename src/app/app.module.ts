@@ -6,10 +6,15 @@ import { MyApp } from './app.component';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { MyTeamsPage, TournamentsPage, TeamDetailPage, TeamsPage } from "../pages/pages";
 
 @NgModule({
   declarations: [
-    MyApp
+    MyApp, 
+    MyTeamsPage,
+    TournamentsPage, 
+    TeamDetailPage,
+    TeamsPage,
   ],
   imports: [
     BrowserModule,
@@ -18,6 +23,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
+    MyTeamsPage,
+    TournamentsPage,
+    TeamDetailPage,
+    TeamsPage,
   ],
   providers: [
     StatusBar,
