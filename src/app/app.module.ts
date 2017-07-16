@@ -6,7 +6,9 @@ import { MyApp } from './app.component';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { HttpModule } from '@angular/http';
 import { MyTeamsPage, TournamentsPage, TeamDetailPage, TeamsPage, TeamHomePage, StandingsPage } from "../pages/pages";
+import { EliteApi } from '../shared/shared';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,12 @@ import { MyTeamsPage, TournamentsPage, TeamDetailPage, TeamsPage, TeamHomePage, 
     TeamDetailPage,
     TeamsPage,
     TeamHomePage,
-    StandingsPage
+    StandingsPage,
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    HttpModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -35,6 +38,8 @@ import { MyTeamsPage, TournamentsPage, TeamDetailPage, TeamsPage, TeamHomePage, 
   providers: [
     StatusBar,
     SplashScreen,
+    EliteApi,
+    HttpModule,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
