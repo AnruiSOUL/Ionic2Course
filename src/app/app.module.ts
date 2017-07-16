@@ -7,7 +7,7 @@ import { MyApp } from './app.component';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { HttpModule } from '@angular/http';
-import { MyTeamsPage, TournamentsPage, TeamDetailPage, TeamsPage, TeamHomePage, StandingsPage } from "../pages/pages";
+import { MyTeamsPage, TournamentsPage, TeamDetailPage, TeamsPage, TeamHomePage, StandingsPage, GamePage} from "../pages/pages";
 import { EliteApi } from '../shared/shared';
 
 @NgModule({
@@ -19,6 +19,7 @@ import { EliteApi } from '../shared/shared';
     TeamsPage,
     TeamHomePage,
     StandingsPage,
+    GamePage
   ],
   imports: [
     BrowserModule,
@@ -33,7 +34,8 @@ import { EliteApi } from '../shared/shared';
     TeamDetailPage,
     TeamsPage,
     TeamHomePage,
-    StandingsPage
+    StandingsPage,
+    GamePage
   ],
   providers: [
     StatusBar,
